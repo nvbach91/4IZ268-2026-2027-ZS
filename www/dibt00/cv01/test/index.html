@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testovací stránka | Tomáš Diblík (dibt00)</title>
+  </head>
+  <body>
+    <header>
+      <h1> Testovací stránka – zkouška HTML tagů </h1>
+      <nav>
+        <a href="../"> Domů </a>
+        <a href="./"> Testovací stránka </a>
+        <a href="../blog/"> Blog </a>
+        <a href="../resume/"> Životopis </a>
+      </nav>
+    </header>
+
+    <main>
+      <p> Níže jsem testoval různé HTML tagy, které jsme dělali na prvním cvičení. </p>
+
+      <h2> 1. Různé úrovně nadpisů </h2>
+      <p> Zde je ukázka dalších úrovní nadpisů: </p>
+
+      <h3> Nadpis třetí úrovně (h3) </h3>
+      <p> Běžný text odstavce pod nadpisem h3. </p>
+
+      <h4> Nadpis čtvrté úrovně (h4) </h4>
+      <p> Běžný text odstavce pod nadpisem h4. </p>
+
+      <h5> Nadpis páté úrovně (h5) </h5>
+      <p> Běžný text odstavce pod nadpisem h5. </p>
+
+      <h6> Nadpis šesté úrovně (h6) </h6>
+      <p> Odstavec pod nadpisem šesté úrovně. </p>
+
+      <h2> 2. Formátování textu a odstavce </h2>
+      <p>
+        V textu můžeme zvýrazňovat slova například <strong>tučně</strong> nebo <em>kurzívou</em>.
+        Hodit se může také <mark>zvýrazňovač</mark>, <small>menší text</small> nebo kus kódu jako třeba <code>console.log("ahoj");</code>.
+      </p>
+      <p> Lze psát i chemické vzorce jako CO<sub>2</sub> nebo matematické mocniny jako x<sup>2</sup>. </p>
+      <p> U zkratky <abbr title="HyperText Markup Language">HTML</abbr> se po najetí myší zobrazí vysvětlivka. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <blockquote>
+        <p> &bdquo;Web není jen o technologiích, ale hlavně o lidech a sdílení informací.&ldquo; </p>
+      </blockquote>
+
+      <h2> 3. Seznamy </h2>
+      <h3> Co mě baví na programování: </h3>
+      <ul>
+        <li> Je pořád co se učit </li>
+        <li> Můžu vytvořit co se mi zamane </li>
+        <li> Je to poměrně kreativní činnost </li>
+      </ul>
+
+      <h3> Ranní postup před odchodem do školy: </h3>
+      <ol>
+        <li> Budíček </li>
+        <li>
+          Snídaně
+          <ul>
+            <li> Vajíčka </li>
+            <li> nebo jogurt s čekankovým syrupem </li>
+          </ul>
+        </li>
+        <li> Cesta metrem do školy nebo práce </li>
+      </ol>
+
+      <h2> 4. Tabulka s mým rozvrhem </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Den</th>
+            <th>Předmět</th>
+            <th>Místnost</th>
+            <th>Čas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Pondělí -->
+          <tr>
+            <td>Pondělí</td>
+            <td>4IZ210 Zpracování informací a znalostí (Cv)</td>
+            <td>SB M15</td>
+            <td>09:15 – 10:45</td>
+          </tr>
+          <tr>
+            <td>Pondělí</td>
+            <td>3SG201 Strategická analýza pro informatiky a statistiky (Př)</td>
+            <td>RB 101</td>
+            <td>11:00 – 12:30</td>
+          </tr>
+          <tr>
+            <td>Pondělí</td>
+            <td>3SG201 Strategická analýza pro informatiky a statistiky (Cv)</td>
+            <td>SB 408</td>
+            <td>12:45 – 14:15</td>
+          </tr>
+          <tr>
+            <td>Pondělí</td>
+            <td>4IZ210 Zpracování informací a znalostí (Př)</td>
+            <td>NB C</td>
+            <td>14:30 – 16:00</td>
+          </tr>
+          <tr>
+            <td>Pondělí</td>
+            <td>4IT101 Programování v Javě (Cv)</td>
+            <td>SB 103</td>
+            <td>16:15 – 17:45</td>
+          </tr>
+          <tr>
+            <td>Pondělí</td>
+            <td>1FU201 Účetnictví I. (Př)</td>
+            <td>Vencovského aula</td>
+            <td>18:00 – 19:30</td>
+          </tr>
+
+          <!-- Úterý -->
+          <tr>
+            <td>Úterý</td>
+            <td>3MI204 Makroekonomie I (Př)</td>
+            <td>JM 105 (JM)</td>
+            <td>18:00 – 19:30</td>
+          </tr>
+
+          <!-- Středa -->
+          <tr>
+            <td>Středa</td>
+            <td>4IT101 Programování v Javě (Př)</td>
+            <td>NB A</td>
+            <td>09:15 – 10:45</td>
+          </tr>
+          <tr>
+            <td>Středa</td>
+            <td>1FU201 Účetnictví I. (Cv)</td>
+            <td>RB 207</td>
+            <td>11:00 – 12:30</td>
+          </tr>
+
+          <!-- Pátek -->
+          <tr>
+            <td>Pátek</td>
+            <td>TVSFIT Fitness (Cv)</td>
+            <td>IB 307</td>
+            <td>09:15 – 10:45</td>
+          </tr>
+          <tr>
+            <td>Pátek</td>
+            <td>4IZ268 Webové technologie (Cv)</td>
+            <td>SB 104</td>
+            <td>11:00 – 12:30</td>
+          </tr>
+          <tr>
+            <td>Pátek</td>
+            <td>4IZ268 Webové technologie (Př)</td>
+            <td>NB D</td>
+            <td>12:45 – 14:15</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2> 5. Vložený obrázek </h2>
+      <p> Zkouška obrázku: </p>
+      <img src="../assets/img/html5-banner.png" alt="HTML5 logo" width="350">
+
+      <h2> 6. Odkazy </h2>
+      <p> Odkaz na web MDN otevřený v novém okně: <a href="https://developer.mozilla.org/cs/" target="_blank">Dokumentace MDN Web Docs</a> </p>
+      <p> Odkaz pro odeslání e-mailu: <a href="mailto:dibt00@vse.cz">Napište mi na e-mail</a> </p>
+
+      <h2> 7. Ukázka formuláře </h2>
+      <form action="#" method="get">
+        <div>
+          <label for="form-name">Vaše jméno:</label><br>
+          <input type="text" id="form-name" name="name">
+        </div>
+        <div>
+          <label for="form-email">Váš e-mail:</label><br>
+          <input type="email" id="form-email" name="email">
+        </div>
+        <div>
+          <label for="form-subject">Oblíbený předmět:</label><br>
+          <select id="form-subject" name="subject">
+            <option value="web">Webové technologie</option>
+            <option value="prog">Programování</option>
+            <option value="databaze">Databáze</option>
+          </select>
+        </div>
+        <p>
+          <button type="submit">Odeslat</button>
+        </p>
+      </form>
+
+      <h2> 8. HTML entity </h2>
+      <p> Ukázka speciálních znaků napsaných přes entity: </p>
+      <p> Znaky: &lt; &gt; &amp; &quot; &copy; &euro; &pound; &yen; </p>
+    </main>
+
+    <footer>
+      <hr>
+      <p> &copy; 2026 Tomáš Diblík (dibt00) | <a href="https://validator.w3.org/nu/?doc=https://eso.vse.cz/~dibt00/cv01/test/">Validace HTML</a> </p>
+    </footer>
+  </body>
+</html>
