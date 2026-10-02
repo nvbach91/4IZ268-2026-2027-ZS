@@ -1,0 +1,67 @@
+/*
+body {
+    color: blue;
+    font-size: 10px;
+}
+h1 {
+    font-size: 34px;
+}
+.class-1 {
+    color: brown;
+}
+.class-2 {
+    color: pink;
+}
+#page-main-heading {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: rgba(16, 55, 94, 0.7);
+}
+h1:hover {
+    color: red;
+}
+
+div p {
+    background-color: purple;
+}
+
+div > p {
+    background-color: rgb(211, 78, 78);
+}
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page-header {
+    background-color: rgb(75, 114, 70);
+    color: #fff;
+    padding: 5px;
+}
+.page-article {
+    font-style: oblique;
+}
+.page-article h3 {
+    background-color: rgb(75, 114, 70);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.page-article p {
+    text-align: justify;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    border: 20px solid blue;
+    padding: 10px;
+    margin: 50px;
+}
