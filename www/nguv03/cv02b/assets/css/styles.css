@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.page-header, .page-footer {
+    background-color: rgb(31, 50, 86);
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+.page-article {
+    font-style: italic;
+    text-align: justify;
+}
+.page-article h3 {
+    background-color: rgb(31, 50, 86);
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: violet;
+    border: 10px solid brown;
+    padding: 20px;
+    margin: 30px;
+}
