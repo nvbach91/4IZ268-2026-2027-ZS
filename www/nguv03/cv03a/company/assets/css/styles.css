@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    border-top: 4px solid cadetblue;
+    display: flex;
+    justify-content: space-between;
+}
+span.logo {
+    background-image: url(https://github-production-user-asset-6210df.s3.amazonaws.com/20724910/274741431-e7e240b4-382d-4b09-a62b-2ad43e03b518.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20261009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261009T095229Z&X-Amz-Expires=300&X-Amz-Signature=88f697f6febd03649ae899ee73254de5206672af1c1eb7c4db23036c5ebfeb35&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng);
+    background-size: contain;
+    text-indent: 50px;
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+nav button {
+    background-color: white;
+    border: none;
+    color: transparent;
+    background-image: url(https://github-production-user-asset-6210df.s3.amazonaws.com/20724910/274741418-3f68cddb-5283-4fbe-a2cc-f236464d9dc3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20261009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261009T100132Z&X-Amz-Expires=300&X-Amz-Signature=0d830dc7de4c347238f1fe51423ee53777ea66c9678e2693bfb0f00d39232c88&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng);
+    background-size: 30px;
+}
+nav a:hover, nav button:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.main-heading {
+    background-size: cover;
+    background-image: url(https://github-production-user-asset-6210df.s3.amazonaws.com/20724910/274741354-d0430f61-b06f-42ef-9f3e-a207d18be834.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20261009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261009T100654Z&X-Amz-Expires=300&X-Amz-Signature=409e8aa5d0ad64c127b3d42aefa5c84aace64f7985652704652b136ec6b6cb94&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng);
+    padding: 50px;
+}
+
+.main-heading h1, .main-heading h3 {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome {
+    line-height: 24px;
+}
+
+.products-heading {
+    background-image: url(https://github-production-user-asset-6210df.s3.amazonaws.com/20724910/274741402-a8ad1146-4eb0-4bd4-8170-e1764783e892.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20261009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261009T101715Z&X-Amz-Expires=300&X-Amz-Signature=697a5d451f3299d817d3782e5da43854583930a6efd8b131ca87b36f60c0bcbd&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng);
+    padding: 40px 0;
+}
+
+.products-heading h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.products {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products li {
+    width: 25%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 0px) {
+    .products li {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 720px) {
+    .products li {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .products li {
+        width: calc(100% / 3);
+    }
+}
+@media screen and (min-width: 1366px) {
+    .products li {
+        width: calc(100% / 4);
+    }
+}

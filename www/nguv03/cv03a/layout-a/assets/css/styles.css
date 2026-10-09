@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header, aside, main, footer {
+    border: 5px solid white;
+    padding: 10px;
+}
+header {
+    background-color: rgb(89, 89, 178);
+}
+aside {
+    background-color: rgb(205, 152, 55);
+    width: 20%;
+}
+main {
+    background-color: rgb(175, 172, 172);
+    width: 60%;
+}
+.third-column {
+    background-color: rgb(190, 92, 190);
+    width: 20%;
+}
+footer {
+    background-color: rgb(83, 136, 83);
+}
+.container {
+    display: flex;
+}

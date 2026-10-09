@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.row-one, .row-two {
+    display: flex;
+}
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+.red { background-color: red; }
+.blue { background-color: blue; }
+
+.yellow, .green, .red, .blue {
+    padding: 10px;
+    border: 5px solid white;
+}
+.yellow, .green {
+    width: 50%;
+}
+.red {
+    width: 60%;
+}
+.sub-column {
+    width: 40%;
+}
