@@ -1,0 +1,145 @@
+html, body {
+  font-family: Arial, sans-serif;
+}
+
+.text-red-named {
+  color: red;
+}
+
+.text-green-rgb {
+  color: rgb(0, 255, 0);
+}
+
+.text-blue-hex {
+  color: #0000ff;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-18px {
+  font-size: 18px;
+}
+
+.text-24px{
+  font-size: 24px;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-brown {
+  background-color: brown;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line-height-32px {
+  line-height: 32px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.box-1 {
+  box-sizing: border-box;
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+  border: 1px solid purple;
+}
+
+.box-2 {
+  box-sizing: border-box;
+  width: 500px;
+  height: 200px;
+  margin: 100px;
+  background-color: firebrick;
+}
+
+.display-none {
+  display: none;
+}
+
+.box-3 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px;
+  border: 10px solid yellow;
+  background-color: steelblue;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.box-4 {
+  width: 200px;
+  height: 500px;
+  background-color: green;
+  opacity: 0.5;
+}
+
+.box-5 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: lightblue;
+}
+.box-5 > p {
+  margin: 0;
+}
+
+.box-5 > .absolute-box {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+
+.box-6 {
+  box-sizing: border-box;
+  width: 200px;
+  height: 400px;
+  border: 20px solid brown;
+  border-radius: 10px;
+}
+
+#button-1 {
+  width: 300px;
+  height: 100px;
+}
+#button-1:active, #button-1:focus {
+  color: blue;
+}
+
+#button-2 {
+  width: 200px;
+  height: 50px;
+}
+#button-2:hover {
+  background-color: brown;
+}
+
+.box-7 {
+  width: 200px;
+  height: 500px;
+  margin-top: 200px;
+  background-color: cadetblue;
+  cursor: pointer;
+}
