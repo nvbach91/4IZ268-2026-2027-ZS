@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #45458e;
+}
+aside {
+    background-color: #c27f2d;
+    width: 20%;
+}
+.content {
+    background-color: #979696;
+    width: 50%;
+}
+.extra {
+    background-color: #9b3e98;
+    width: 30%;
+}
+footer {
+    background-color: #64d464;
+}
+main {
+    display: flex;
+}
+header, aside, .content, .extra, footer {
+    padding: 20px;
+    border: 5px solid white;
+}

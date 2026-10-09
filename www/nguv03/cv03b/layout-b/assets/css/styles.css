@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+.row-one, .row-two {
+    display: flex;
+}
+.yellow, .green, .red, .blue {
+    padding: 20px;
+    border: 5px solid #fff;
+}
+.yellow { background-color: #d7d763; }
+.green { background-color: #5ed35e; }
+.red { background-color: #f46969; }
+.blue { background-color: #5d5df2; }
+
+.yellow, .green {
+    width: 50%;
+}
+.red {
+    width: 60%;
+}
+.sub-column {
+    width: 40%;
+}
