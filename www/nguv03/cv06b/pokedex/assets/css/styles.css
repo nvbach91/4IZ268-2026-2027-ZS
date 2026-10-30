@@ -1,0 +1,6 @@
+* {
+    box-sizing: border-box;
+}
+.highlighted {
+    background-color: cadetblue;
+}
