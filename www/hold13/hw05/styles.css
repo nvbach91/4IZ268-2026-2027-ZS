@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Контейнер для кнопок (отступы между ними) */
+#tasks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Самые кнопки */
+#tasks button {
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#tasks button:hover {
+  background-color: #1565c0;
+}
+
+/* Блок для вывода результатов */
+#results {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  color: #222;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
