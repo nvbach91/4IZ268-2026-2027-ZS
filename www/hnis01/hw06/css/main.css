@@ -1,0 +1,30 @@
+body {
+    max-width: 1024px;
+    margin: 50px auto;
+}
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid black;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 512px;
+    padding: 10px;
+    background-color: lightslategray;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    resize: vertical;
+    padding: 8px;
+    font-family: inherit;
+}
