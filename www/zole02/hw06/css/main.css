@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Šedý box s formulářem */
+.cipher-box {
+  padding: 30px;
+  background-color: #eee;
+  text-align: left;
+}
+
+.cipher-box h1 {
+  margin: 0 0 20px;
+}
+
+textarea,
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  height: 42px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  background-color: cadetblue;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: rgb(46, 93, 95);
+}
+
+hr {
+  margin: 20px 0;
+  border-style: solid;
+  border-color: #eee;
+}
+
+/* Místo pro dešifrovaný text */
+#result {
+  min-height: 60px;
+  padding: 10px;
+  word-wrap: break-word;
+}
