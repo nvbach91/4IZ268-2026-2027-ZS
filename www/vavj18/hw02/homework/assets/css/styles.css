@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif, Helvetica;
+    margin: 0;
+    padding: 10px;
+}
+
+.box_border {
+    box-sizing: border-box;
+}
+
+/* text color  */
+.red_named {color: red;}
+.green_rgb {color: rgb(0, 255, 0)}
+.blue_hex {color: #0000ff}
+.white {color: white;}
+
+/* text type & position */
+.bold {font-weight: bold;}
+.italic {font-style: italic;}
+.center {text-align: center;}
+.justify {text-align: justify;}
+.capital {text-transform: uppercase;}
+
+/* text size & line height */
+.size_18 {font-size: 18px;}
+.size_24 {font-size: 24px;}
+.line_height_32 {line-height: 32px;}
+
+/* background color */
+.bg_brown {background-color: brown;}
+.bg_red {background-color: red;}
+.bg_blue {background-color: blue;}
+.bg_green {background-color: green;}
+.bg_light_blue {background-color: lightblue;}
+.bg_pink {background-color: pink;}
+
+/* width */
+.width_50 {width: 50px;}
+.width_200 {width: 200px;}
+.width_300 {width: 300px;}
+.width_400 {width: 400px;}
+.width_500 {width: 500px;}
+.width_100p {width: 100%;}
+
+/* height */
+.height_50 {height: 50px;}
+.height_100 {height: 100px;}
+.height_200 {height: 200px;}
+.height_300 {height: 300px;}
+.height_400 {height: 400px;}
+.height_500 {height: 500px;}
+
+/* padding & margin */
+.padding_30 {padding: 30px;}
+.padding_50 {padding: 50px;}
+.margin_100 {margin: 100px;}
+.margin_top_200 {margin-top: 200px;}
+
+/* border */
+.border_1 {border-width: 1px;}
+.border_10 {border-width: 10px;}
+.border_20 {border-width: 20px;}
+.border_solid {border-style: solid;}
+.border_purple {border-color: purple;}
+.border_yellow {border-color: yellow;}
+.border_brown {border-color: brown;}
+.border_rad_10 {border-radius: 10px;}
+
+/* visibility */
+.non_visible {display: none;}
+.non_visible_gap {visibility: hidden;}
+.opacity_50 {opacity: 0.5;}
+
+/* position */
+.pos_relative {position: relative;}
+.pos_absolute {position: absolute; top: 50px; right: 10px;}
+
+/* button interaction */
+.hand_cursor:hover {cursor: pointer;}
+.btn_blue_text:active {color: blue;}
+.btn_brown_bg:hover {background-color: brown;}
