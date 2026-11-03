@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+    margin: auto;
+    padding: 10px 10px 0px 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex: content;
+    width: auto;
+}
+
+
+.title {
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: left;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        3px 3px 0 rgb(80, 70, 172),
+        3px 3px 0 rgb(80, 70, 172);
+}
+
+button {
+    color: white;
+    margin-left: 20px;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 12px;
+    background: rgb(80, 70, 172);
+    cursor: pointer;
+    box-shadow: 0 6px 0 rgb(51, 45, 112), 0 calc(6px + 6px) 14px rgba(20, 8, 12, .28);
+}
+
+div:nth-of-type(1):not(.title, .button) {
+    background-color: rgb(33, 9, 78);
+    /*margin: 0 200px 0px 200px;*/
+    padding-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 5px 10px 15px #5c5c5c;
+}
+
+input {
+    width: 95%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    line-height: 30px;
+    margin-left: 20px;
+    box-shadow: 5px 10px 15px #8982c9;
+}
+
+div:nth-child(2)>input {
+    margin-top: 20px;
+    line-height: 90px;
+}
+
+div:nth-child(3)>input {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 95%;
+}
+
+.result {
+    margin: 40px 0px 0px 0px;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
