@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body > * {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form {
+    width: clamp(15rem, 20rem, 100vw);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #ababab;
+}
+
+form > * {
+    padding: 0.5em;
+    border: none;
+}
+
+output {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1em;
+    margin-top: 8px;
+    border-top: 1px solid #ababab;
+    border-bottom: 1px solid #ababab;
+    text-align: center;
+}

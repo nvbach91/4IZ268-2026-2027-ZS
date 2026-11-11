@@ -21,8 +21,7 @@ const shiftChar = (c, shift) => {
   // a helper function to shift one character inside the
   // alphabet based on the shift value and return the result
   const initialIndex = alphabet.indexOf(c);
-  const newIndex =
-    initialIndex + shift >= alphabet.length ? initialIndex + shift - alphabet.length : initialIndex + shift;
+  const newIndex = (initialIndex + shift) % alphabet.length;
   return alphabet[newIndex];
 };
 const shiftString = (str, shift) => {
@@ -62,3 +61,13 @@ console.log(caesarDecipher(
   12,
 ));
 */
+
+const form = document.querySelector("#decipher-form");
+const result = document.querySelector("#result");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const cipherText = form.elements.cipherText.value.toUpperCase();
+  const key = Number(form.elements.key.value);
+  result.textContent = caesarDecipher(cipherText, key);
+});
