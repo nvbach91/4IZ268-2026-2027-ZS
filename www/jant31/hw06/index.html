@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Long live SPARTA!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <h1>Ceasarova sifra</h1>
+
+  <form>
+    <label for="text">Vloz text pro desifrovani</label>
+    <textarea name="text" id="i-text" required rows="5" cols="33"></textarea>
+
+    <label for="offset">Vloz offset</label>
+    <input type="number" name="offset" id="i-offset" min="0" step="1" required>
+
+    <button id="decode">Dekodovat</button>
+  </form>
+
+  <p class="result"></p>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
