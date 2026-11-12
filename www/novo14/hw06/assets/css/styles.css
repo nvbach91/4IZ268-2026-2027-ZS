@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+}
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+}
+.cipher-fields {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid (234, 234, 234);
+    font-size: 15px;
+    color: grey;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+}
+
+
+
+#decipher-button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(139, 0, 0);
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
