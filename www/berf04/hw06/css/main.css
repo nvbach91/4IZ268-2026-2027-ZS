@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* main container */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    background-color: #eeeeee;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.gridContainer h1 {
+    margin: 0 0 4px 0;
+    font-size: 24px;
+    color: #1a1a1a;
+}
+
+#cipherTextArea {
+    width: 100%;
+    min-height: 140px;
+    padding: 16px;
+    border: none;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333333;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#shiftInput {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+#decipherButton {
+    justify-self: start;
+    background-color: #5b9b9c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#decipherButton:hover {
+    background-color: #01ff2c;
+}
