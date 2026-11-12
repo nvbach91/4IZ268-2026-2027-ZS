@@ -1,0 +1,205 @@
+:root {
+  /* Палитра из референса */
+  --mistelle: #b3c6cd;
+  --harbor: #688593;
+  --cognac: #80582f;
+  --mahogany: #342019;
+
+  --surface-card: #fcfbf9;
+  --surface-input: #f2f5f7;
+  --border-light: #cad7dc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  /* Полноценный светло-голубой фон Mistelle */
+  background-color: var(--mistelle);
+  background-image: linear-gradient(135deg, #c2d3d9 0%, var(--mistelle) 100%);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--mahogany);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 580px;
+}
+
+.card {
+  background-color: var(--surface-card);
+  border: 1px solid var(--harbor);
+  border-top: 6px solid var(--cognac);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 20px 44px rgba(52, 32, 25, 0.16);
+}
+
+.card-header {
+  margin-bottom: 28px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mahogany);
+  background-color: var(--mistelle);
+  padding: 5px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--mahogany);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--harbor);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--mahogany);
+}
+
+textarea,
+input {
+  width: 100%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  padding: 13px 16px;
+  background-color: var(--surface-input);
+  border: 1.5px solid var(--border-light);
+  border-radius: 8px;
+  color: var(--mahogany);
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Скрытие стрелок у числового поля */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: var(--harbor);
+  box-shadow: 0 0 0 3px rgba(104, 133, 147, 0.25);
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #8398a2;
+}
+
+button {
+  margin-top: 6px;
+  background-color: var(--cognac);
+  color: #fcfbf9;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(128, 88, 47, 0.25);
+}
+
+button:hover {
+  background-color: var(--mahogany);
+  box-shadow: 0 6px 16px rgba(52, 32, 25, 0.28);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-light);
+  margin: 28px 0 24px;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.result-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--harbor);
+}
+
+.result-box {
+  /* Насыщенный светло-голубой блок Mistelle без прозрачности */
+  background-color: var(--mistelle);
+  border: 1.5px solid var(--harbor);
+  border-radius: 8px;
+  padding: 18px 20px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--mahogany);
+  word-break: break-word;
+}
+
+.result-box.placeholder {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mahogany);
+  opacity: 0.75;
+}
