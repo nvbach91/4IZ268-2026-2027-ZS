@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Long live SPARTA!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Your implementation goes here -->
+   <h1>Caesar Decipher</h1>
+
+  <main>
+
+    <div class="action">
+      <label>Encrypted text:</label>
+      <textarea id="cipherText"></textarea>
+      <label>Key:</label>
+      <input type="number" id="key">
+      <button onclick="decipher()">Decipher!</button>
+    </div>
+    
+    <div class="result">
+      <h3>Result:</h3>
+      <div id="result"></div>
+    </div>
+
+  </main>
+  <!--
+    PPPPPPP    EEEEEEE   PPPPPPP    SSSSSSS    IIIIIII
+    PP    PP   EE        PP    PP  SS            III
+    PP    PP   EE        PP    PP  SS            III
+    PPPPPPP    EEEEE     PPPPPPP     SSSSS       III
+    PP         EE        PP               SS     III
+    PP         EE        PP               SS     III
+    PP         EEEEEEE   PP         SSSSSSS    IIIIIII
+  -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
