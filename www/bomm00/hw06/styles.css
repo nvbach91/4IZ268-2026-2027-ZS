@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#form {
+  width: 420px;
+  margin: 5px auto 0;
+  padding: 20px;
+  background: #eee;
+}
+
+#form h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+#form textarea,
+#form input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#form textarea {
+  height: 95px;
+}
+
+#submit {
+  padding: 12px 20px;
+  background: #5f9ea0;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 10px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
