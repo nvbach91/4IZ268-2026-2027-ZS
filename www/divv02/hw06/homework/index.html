@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Long live SPARTA!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+      <h1>Spartan Caesar Decipher</h1>
+      
+      <div class="form-group">
+          <label for="cipherText">Zašifrovaný text:</label>
+          <textarea id="cipherText" placeholder="Zašifrovaný text..."></textarea>
+      </div>
+
+      <div class="form-group">
+          <label for="usedKey">Použitý klíč:</label>
+          <input type="number" id="usedKey" value="19" min="0" max="25">
+      </div>
+
+      <button id="decipherBtn">Decipher!</button>
+
+      <div class="result-container">
+          <label>Dešifrovaný text:</label>
+          <div id="resultBox" class="result-box">
+              <span class="placeholder-text">Výsledek:</span>
+          </div>
+      </div>
+  </div>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
