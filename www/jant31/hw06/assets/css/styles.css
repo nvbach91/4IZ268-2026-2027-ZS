@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    color: #1e1e1e;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #0033a0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 5px solid #0033a0;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #e6a100;
+}
+
+form input,
+form textarea {
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #e6a100;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #0033a0;
+    box-shadow: 0 0 0 3px rgba(0, 51, 160, 0.2);
+}
+
+form textarea#i-text {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    background-color: #ac142e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #880d23;
+    color: #ffcc00;
+}
+
+form button:active {
+    background-color: #66091a;
+}
+
+.result {
+    margin-top: 20px;
+    color: #e6a100;
+    animation: nabeh 0.2s ease-out;
+}
+
+@keyframes nabeh {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
