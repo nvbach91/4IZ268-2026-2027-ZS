@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Long live SPARTA!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <div class="card">
+      <h1>Long live Sparta!</h1>
+
+      <label for="cipher-text" class="visually-hidden">Encrypted text</label>
+      <textarea id="cipher-text" rows="5" placeholder="Encrypted text">UF'E YADBTUZ' FUYQ.</textarea>
+
+      <label for="cipher-key" class="visually-hidden">Used key</label>
+      <input id="cipher-key" type="number" placeholder="Key" value="12">
+
+      <button id="decipher-btn" type="button">Decipher!</button>
+    </div>
+
+    <hr>
+    <p id="result" class="result"></p>
+    <hr>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
