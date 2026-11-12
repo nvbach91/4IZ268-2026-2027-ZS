@@ -1,0 +1,154 @@
+:root {
+  --stone-dark: #1e2327;
+  --stone: #2c333a;
+  --gold: #d4a017;
+  --gold-hover: #f0bd3a;
+  --text: #f2efe6;
+  --muted: #a9b1ba;
+  --error: #ff6b6b;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-family: "Segoe UI";
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, #3a4149 0%, transparent 60%),
+    var(--stone-dark);
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  padding: 32px;
+  background: var(--stone);
+  border: 1px solid #3d464f;
+  border-top: 4px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  color: var(--text);
+  background: var(--stone-dark);
+  border: 1px solid #4a545e;
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea {
+  resize: vertical;
+  font-family: Consolas, "Courier New", monospace;
+  text-transform: uppercase;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.25);
+}
+
+button {
+  margin-top: 16px;
+  padding: 14px;
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone-dark);
+  background: var(--gold);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: var(--gold-hover);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.result {
+  margin-top: 28px;
+  padding: 16px;
+  background: var(--stone-dark);
+  border-radius: 8px;
+  border-left: 3px solid var(--gold);
+}
+
+.output {
+  min-height: 3em;
+  margin: 0;
+  font-family: Consolas, "Courier New", monospace;
+  line-height: 1.6;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.output.error {
+  color: var(--error);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
