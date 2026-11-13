@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background-color: rgb(228, 228, 228);
+    margin: 0 auto;
+    padding: 5px 20px;
+    padding-bottom: 15px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-box {
+    margin: 12px 0;
+    border: none;
+}
+
+.decipher-btn {
+    background-color: rgb(123, 241, 202);
+    border: none;
+    max-width: 100px;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.decipher-btn:hover {
+    cursor: pointer;
+    background-color: rgb(165, 247, 219);
+}
