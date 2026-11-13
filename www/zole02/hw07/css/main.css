@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background-color: #f2f4f8;
+  color: #222;
+}
+/* Herní plocha: 5 sloupců, 4 řádky */
+#game-field {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+/* Karta ve výchozím stavu (text se do ní vkládá až po otočení) */
+.card {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b5fb4;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.card:hover {
+  background-color: #3c74d4;
+}
+/* Otočená karta */
+.card.revealed {
+  background-color: #fff;
+  color: #2b5fb4;
+  border: 2px solid #2b5fb4;
+  cursor: default;
+}
+/* Nalezený pár */
+.card.matched {
+  background-color: #d6f5dd;
+  color: #1d7a36;
+  border-color: #1d7a36;
+}
+.message {
+  font-size: 1.3em;
+  font-weight: 700;
+  min-height: 1.5em;
+}
+.restart {
+  display: none;
+  padding: 10px 24px;
+  font-family: inherit;
+  font-size: 1em;
+  background-color: #2b5fb4;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.restart.visible {
+  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  #game-field {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card {
+    font-size: 0.8em;
+  }
+}
