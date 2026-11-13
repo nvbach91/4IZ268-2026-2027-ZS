@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Long live SPARTA!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Caesar Cipher Decoder</h1>
+    
+    <div class="input-group">
+      <label for="cipher-text">Zašifrovaný text:</label>
+      <textarea id="cipher-text" rows="5" placeholder="Vložte text k dešifrování..."></textarea>
+    </div>
+    
+    <div class="input-group">
+      <label for="cipher-key">Použitý klíč (číslo):</label>
+      <input type="number" id="cipher-key" placeholder="Např. 19">
+    </div>
+    
+    <button id="btn-decipher">Decipher!</button>
+    
+    <div class="output-group">
+      <h2>Dešifrovaný text:</h2>
+      <p id="output-text"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
