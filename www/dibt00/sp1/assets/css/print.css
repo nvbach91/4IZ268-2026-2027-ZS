@@ -1,0 +1,233 @@
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+body {
+  color: #111;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+.container {
+  width: auto;
+  max-width: none;
+  margin: 0;
+}
+
+.site-header {
+  padding: 0 0 4mm;
+  border-bottom: 1pt solid #999;
+}
+
+.brand-row {
+  display: block;
+  padding: 0;
+}
+
+.site-brand {
+  color: #111;
+  font-size: 16pt;
+}
+
+.brand-mark, .site-nav, .skip-link, .button, .footer-links, .hero-decorative {
+  display: none;
+}
+
+.site-tagline {
+  margin-top: 2mm;
+  color: #333;
+  font-size: 9pt;
+}
+
+main {
+  padding: 6mm 0 0;
+}
+
+h1, h2, h3, .footer-brand {
+  color: #111;
+  font-family: Georgia, serif;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+h1, .hero h1 {
+  margin-bottom: 4mm;
+  font-size: 25pt;
+}
+
+h2 {
+  font-size: 17pt;
+}
+
+h3 {
+  font-size: 12pt;
+}
+
+p, li {
+  orphans: 3;
+  widows: 3;
+}
+
+p {
+  margin-bottom: 3mm;
+}
+
+ul, ol {
+  margin-block: 3mm;
+}
+
+li {
+  margin-top: 1mm;
+}
+
+a {
+  color: #111;
+  text-decoration: underline;
+}
+
+a[href^="https://"]::after {
+  content: " (" attr(href) ")";
+  font-size: 8pt;
+  overflow-wrap: anywhere;
+}
+
+.lead {
+  max-width: none;
+  color: #111;
+  font-size: 11pt;
+}
+
+.eyebrow, .source-note, figcaption, .card-credit, .footer-note, .card-body p, .facts dt, .facts dd {
+  color: #333;
+}
+
+.eyebrow {
+  break-after: avoid;
+}
+
+.hero, .feature-grid, .card-grid, .footer-grid, .route-layout, .section-heading {
+  display: block;
+}
+
+.page-intro, .feature-copy {
+  max-width: none;
+}
+
+.page-intro {
+  margin-bottom: 6mm;
+}
+
+.section-block {
+  margin-top: 4mm;
+}
+
+.content-section {
+  padding-block: 4mm;
+}
+
+.planning-band, .route-note, .contact-card, .route-stops, .facts > div {
+  color: #111;
+  background: #fff;
+}
+
+.planning-band, .contact-card {
+  padding: 3mm;
+  border: 1pt solid #999;
+}
+
+.route-card {
+  margin-top: 4mm;
+  padding: 4mm;
+  border: 1pt solid #999;
+}
+
+.route-card p {
+  margin-bottom: 2mm;
+}
+
+.route-card h3 {
+  margin-top: 4mm;
+}
+
+.route-stops {
+  padding: 0 0 0 7mm;
+  break-inside: avoid;
+}
+
+.route-note {
+  padding: 2mm 3mm;
+}
+
+.route-stops li::marker, .timeline strong {
+  color: #111;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3mm;
+  margin-block: 3mm;
+}
+
+.facts > div {
+  flex: 1 1 45mm;
+  padding: 1mm;
+  border: 1pt solid #ccc;
+}
+
+.card {
+  margin-bottom: 5mm;
+  border: 0;
+  overflow: visible;
+}
+
+.card > img, .feature-image img {
+  width: auto;
+  max-width: 75mm;
+  max-height: 48mm;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 3mm 0;
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6mm;
+}
+
+.gallery-item img {
+  max-height: 48mm;
+}
+
+figure, .card, .route-card, .planning-band, .contact-card, .timeline li, .route-stops li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.site-footer {
+  margin-top: 4mm;
+  padding: 4mm 0 0;
+  background: #fff;
+  font-size: 8.5pt;
+}
+
+.site-footer p {
+  margin-bottom: 1mm;
+}
+
+.footer-brand {
+  font-size: 10pt;
+}
+
+.footer-note {
+  margin-top: 1mm;
+}
+
+.link-list li {
+  padding-block: 2mm;
+}
