@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#game-field {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
+    gap: 32px;
+}
+
+.card {
+    background-color: rgb(177, 17, 55);
+    color: rgb(177, 17, 55);
+    height: 60px;
+    text-align: center;
+    border-radius: 6px;
+    transition: all 500ms;
+}
+
+.card:hover {
+    background-color: hsl(346, 82%, 30%);
+    color: hsl(346, 82%, 30%);
+    cursor: pointer;
+}
+
+.card.revealed {
+    color: white;
+}
