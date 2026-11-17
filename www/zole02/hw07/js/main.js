@@ -81,11 +81,14 @@ const checkPair = () => {
     firstCard.element.classList.add("matched");
     secondCard.element.classList.add("matched");
     showPoints();
-    resetTurn();
-    if (matchedCount === totalCards) {
-      messageElement.innerText = "Game over! Your total score: " + points;
-      restartButton.classList.add("visible");
-    }
+    // plocha zůstane 2 s zamčená, teprve pak může hráč táhnout znovu
+    setTimeout(() => {
+      resetTurn();
+      if (matchedCount === totalCards) {
+        messageElement.innerText = "Game over! Your total score: " + points;
+        restartButton.classList.add("visible");
+      }
+    }, HIDE_DELAY);
   } else {
     // neshoda: -1 bod (ne pod nulu), po 2 s se karty vrátí zpět
     points = Math.max(0, points - 1);
@@ -118,8 +121,10 @@ const onCardClick = (card) => {
 };
 
 // Vytvoří jednu kartu; objekt si pamatuje jméno města v JS, ne v HTML
+// Karta je <button>, takže jde otočit i z klávesnice (Tab + Enter/mezerník)
 const createCard = (name) => {
-  const element = document.createElement("div");
+  const element = document.createElement("button");
+  element.type = "button";
   element.classList.add("card");
   const card = { name: name, element: element };
   element.addEventListener("click", () => {
