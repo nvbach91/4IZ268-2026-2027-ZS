@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: rgb(244, 237, 238);
+}
+button {
+    border: none;
+}
+h1, h2, h3{
+    text-align: center;
+    padding: 10px;
+}
+#game-field {
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: rgb(170, 31, 31);
+    height: 90px;
+    width: calc(100%/4 - 16px);
+    border-radius: 8px;
+    margin: 5px;
+}
+.card:hover {
+    cursor: pointer;
+    background-color: rgb(114, 16, 16);
+    transition: background-color ease 0.5s;
+}
+.card.revealed {
+    cursor: auto;
+    background-color: rgb(255, 172, 142);
+    text-align: center;
+    font-size: 18px;
+}
+.card.revealed.paired {
+    background-color: lightgreen;
+}
+@media screen and (min-width: 0px) {
+    .card{
+        width: calc(100%/2 - 16px);
+    }
+}
+@media screen and (min-width: 600px) {
+    .card {
+        width: calc(100%/3 - 16px);
+    }
+}
+@media screen and (min-width: 760px) {
+    .card {
+        width: calc(100%/4 - 16px);
+    }
+}
