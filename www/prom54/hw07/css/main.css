@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0f172a;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: #f5c542;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+#points {
+    color: #f5c542;
+    font-size: 30px;
+}
+
+#game-field {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 85px;
+    font-size: 0;
+    user-select: none;
+    /*modré označení*/
+    cursor: pointer;
+    background-image: url(../background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+
+}
+
+.card:hover {
+    filter: brightness(0.9);
+    transform: scale(1.03);
+}
+
+.card.revealed {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-image: none;
+    background-color: #740001;
+    border-color: #f5c542;
+    transform: none;
+    filter: none;
+}
+
+
+.win-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: #0f172a;
+    border: 3px solid #f5c542;
+    border-radius: 15px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.win-modal p {
+    margin: 0 0 20px 0;
+    font-size: 22px;
+    color: #f5c542;
+}
+
+.win-modal button {
+    background-color: #740001;
+    color: #fdf6e3;
+    border: 2px solid #f5c542;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.win-modal button:hover {
+    background-color: #9b0002;
+    transform: scale(1.05);
+}
