@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+#game-field {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#card {
+    color: transparent;
+    border: solid 2px black;
+    width: 20%;
+    height: 100px;
+    margin: 10px;
+}
+#card:hover {
+    background-color: rgb(163, 163, 163);
+
+}
+
+#cardRevealed {
+    display: flex;
+    color: blue;
+    border: solid 2px black;
+    width: 20%;
+    height: 100px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+
+}
+
+#cardRemoved {
+    color: transparent;
+    width: 20%;
+    height: 100px;
+    margin: 10px;
+    pointer-events: none;
+}
