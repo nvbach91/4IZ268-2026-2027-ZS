@@ -7,18 +7,18 @@ const gf = document.querySelector('#game-field');
 const points = document.querySelector('#points');
 const body = document.querySelector('body');
 
-let cities = ['Prague', 'Juba', 'Tijor', 'Mogiri', 'Lafon', 'Mundri', 'Nyiel', 'Jalle', 'Kolmarek', 'Kediba'];
-cities = cities.concat(cities);
-cities.sort(() => {
+let items = ['Python', 'Rust', 'Go', 'Java', 'Ruby', 'Swift', 'Kotlin', 'Perl', 'Lua', 'Dart'];
+items = items.concat(items);
+items.sort(() => {
   return 0.5 - Math.random();
 });
 
-gf.style.setProperty('--max-card-width', `${cities.reduce((acc, str) => {
+gf.style.setProperty('--max-card-width', `${items.reduce((acc, str) => {
   return Math.max(acc, str.length);
-}, 0)}em`);
+}, 10)}em`);
 
 const cardMap = new Map();
-cities.forEach(c => {
+items.forEach(c => {
   const card = document.createElement('div');
   card.classList.add('card');
   cardMap.set(card, c);
