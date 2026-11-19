@@ -4,7 +4,7 @@
     --foreground: #FEFA38;
     --hover: #ABA701;
     --background: #353434;
-    --revelead: #444343;
+    --revealed: #444343;
 }
 body {
     display: flex;
@@ -49,6 +49,6 @@ body {
 }
 .card.revealed {
     color: var(--foreground, #000000);
-    background-color: var(--revelead, #eeeeee);
+    background-color: var(--revealed, #eeeeee);
     border-color: var(--foreground, #000000);
 }
