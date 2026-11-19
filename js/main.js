@@ -1,3 +1,6 @@
+/**
+ * Pexeso
+ */
 
 const CITY_NAMES = [
   'Prague', 'London', 'Paris', 'Moscow', 'California',
@@ -5,13 +8,13 @@ const CITY_NAMES = [
 ];
 const FLIP_BACK_DELAY = 1500;
 
+// Game state
 let points = 0;
 let matchedCount = 0;
 let firstCard = null;
 let secondCard = null;
 let locked = false;
 
-// kontent se drzi v JS az karta se zobrazi, aby nikdo ne podvadel pomoci inspekci
 const cardValues = new WeakMap();
 
 const pointsEl = document.querySelector('#points');
@@ -59,7 +62,6 @@ const resetTurn = () => {
 };
 
 const onCardClick = (card) => {
-  // neklikat kdyz uz dve karty uz zobrazeny, nebo na uz zobrazene karty
   if (locked || card.classList.contains('revealed')) {
     return;
   }
@@ -80,7 +82,6 @@ const onCardClick = (card) => {
     matchedCount += 2;
     resetTurn();
     if (matchedCount === gameField.children.length) {
-      // dava cas posledni karte renderovat, nez zobrazi vysledek
       setTimeout(endGame, 300);
     }
   } else {
@@ -113,7 +114,6 @@ function startGame() {
   const cities = CITY_NAMES.concat(CITY_NAMES);
   cities.sort(() => 0.5 - Math.random());
 
-  // nastavit nejprve vsichny karty, vlozit ji v DOM najednou
   const fragment = document.createDocumentFragment();
   cities.forEach((city) => fragment.appendChild(createCard(city)));
   gameField.appendChild(fragment);
