@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(160deg, #1d2b3a, #0f1821);
+    color: #f1f5f9;
+    text-align: center;
+    padding: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    margin: 12px 0 4px;
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+}
+
+h2 {
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+#points {
+    color: #fcd34d;
+}
+
+#game-field {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3d5a80, #293241);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-weight: 700;
+    font-size: clamp(0.65rem, 2.4vw, 1.05rem);
+    line-height: 1.2;
+    word-break: break-word;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.card::after {
+    content: '?';
+    font-size: 1.8em;
+    opacity: 0.55;
+}
+
+.card:not(.revealed):hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #4f7bab, #33465c);
+}
+
+.card.revealed {
+    background: #ee6c4d;
+    cursor: default;
+}
+
+.card.revealed::after {
+    content: none;
+}
+
+.card.matched {
+    background: #3ec070;
+}
+
+.game-over {
+    margin-top: 24px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fcd34d;
+}
+
+@media (max-width: 480px) {
+    #game-field {
+        gap: 8px;
+    }
+}
