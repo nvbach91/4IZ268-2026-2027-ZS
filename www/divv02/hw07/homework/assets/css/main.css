@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 24px;
+    background: #1c2127;
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    margin: 0 0 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+#points {
+    color: #68b099;
+    font-weight: 700;
+}
+
+#game-field {
+    display: grid;
+    grid-template-columns: repeat(6, 110px);
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.card {
+    position: relative;
+    height: 110px;
+    border-radius: 10px;
+    background-color: #262d35;
+    background-size: cover;
+    background-position: 50% 22%;
+    border: 2px solid #39434f;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #7c5838;
+}
+
+.card:hover {
+    border-color: #68b099;
+    transform: translateY(-2px);
+}
+
+.card.revealed {
+    border-color: #6ba3d6;
+    transform: none;
+    cursor: default;
+}
+
+.card.revealed::before,
+.card.matched::before {
+    display: none;
+}
+
+.card.matched {
+    border-color: #5ea87e;
+    transform: none;
+    cursor: default;
+}
+
+@media (max-width: 720px) {
+    #game-field {
+        grid-template-columns: repeat(4, 76px);
+    }
+
+    .card {
+        height: 76px;
+    }
+}
