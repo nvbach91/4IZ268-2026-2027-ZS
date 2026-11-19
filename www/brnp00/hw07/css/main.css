@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: #0d0d0d;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #e10600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+h2 strong {
+    color: #e10600;
+}
+
+#game-field {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b00000;
+    color: #ffffff;
+    font-size: 16px;
+    border: 2px solid #e10600;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    background-color: #e10600;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(225, 6, 0, 0.6);
+}
+
+.card.revealed {
+    background-color: #1a1a1a;
+    border-color: #e10600;
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
+
+.card.matched {
+    background-color: #000000;
+    border-color: #555555;
+    color: #e10600;
+    font-weight: 700;
+}
+
+.end-box {
+    max-width: 400px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 2px solid #e10600;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.restart-button {
+    background-color: #e10600;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background-color: #b00000;
+}
+
+@media (max-width: 700px) {
+    #game-field {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        height: 90px;
+        font-size: 14px;
+    }
+}
