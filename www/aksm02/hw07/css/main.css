@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #f6f4f0;
+    color: #1f1d1b;
+    margin: 0;
+    padding: 48px 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.1rem;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+    color: #1f1d1b;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #756c64;
+    margin: 0 0 36px;
+}
+
+#points {
+    color: #1f1d1b;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+#game-field {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    background-color: #2b2623;
+    color: transparent;
+    height: 120px;
+    border-radius: 12px;
+    border: 1px solid #2b2623;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 4px 12px rgba(31, 29, 27, 0.08);
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease, border-color 0.25s ease;
+}
+
+.card::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(246, 244, 240, 0.25);
+    transition: opacity 0.2s ease;
+}
+
+.card:hover {
+    background-color: #3d3530;
+    border-color: #3d3530;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(31, 29, 27, 0.14);
+}
+
+.card.revealed {
+    background-color: #ffffff;
+    color: #1f1d1b;
+    border-color: #dfd8ce;
+    cursor: default;
+    transform: none;
+    box-shadow: 0 2px 8px rgba(31, 29, 27, 0.05);
+}
+
+.card.revealed::before {
+    display: none;
+}
+
+.card.revealed:hover {
+    background-color: #ffffff;
+    border-color: #dfd8ce;
+    transform: none;
+    box-shadow: 0 2px 8px rgba(31, 29, 27, 0.05);
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 32px 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #game-field {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        height: 88px;
+        font-size: 0.85rem;
+        border-radius: 10px;
+    }
+}
