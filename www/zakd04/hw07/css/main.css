@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f0f4f8;
+    color: #1f2d3d;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+h2 {
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+#game-field {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.card {
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b6ea5;
+    color: transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s, transform 0.2s;
+}
+.card:hover {
+    background: #4a82bf;
+    transform: translateY(-2px);
+}
+.card.revealed {
+    background: #fff;
+    color: #1f2d3d;
+    cursor: default;
+    transform: none;
+}
+.card.matched {
+    background: #c8f0d2;
+    color: #1b5e3a;
+}
+.game-over {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game-over-box {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 12px;
+}
+.game-over-box button {
+    font: inherit;
+    padding: 10px 24px;
+    border: 0;
+    border-radius: 6px;
+    background: #3b6ea5;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    #game-field {
+        gap: 6px;
+    }
+    .card {
+        font-size: 11px;
+    }
+}
