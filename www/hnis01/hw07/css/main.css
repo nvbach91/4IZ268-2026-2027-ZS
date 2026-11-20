@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1356px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+#game-field {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+
+.card {
+    background-color: red;
+    padding: 30px;
+    border: none;
+    border-radius: 5px;
+    /*transition-duration: 0.4s;*/
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.card.revealed {
+    background-color: green;
+    padding: 20px 10px;
+}
