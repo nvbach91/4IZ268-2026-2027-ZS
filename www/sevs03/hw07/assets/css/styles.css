@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: fit-content;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: rgb(178, 152, 238);
+    color: aliceblue;
+    margin: 0;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10%;
+    margin: 1px
+}
+
+.card:hover {
+    background-color: rgb(142, 110, 218);
+
+
+}
+
+.card.matched {
+    background-color: rgb(255, 255, 255);
+    color: rgb(118, 88, 185);
+    font-size: x-large;
+    font-weight: bolder;
+    border: 3px;
+    border-style: dotted;
+}
+
+#game-field {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 608px;
+
+}
+
+button {
+    background-color: rgb(62, 9, 112);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(142, 110, 218);
+    padding: 10px;
+    font-size: 26px;
+
+
+}
