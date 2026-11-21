@@ -1,0 +1,19 @@
+Název stránky: Poznej Holice (turistický průvodce městem Holice a okolí)
+
+Cílem stránky je sloužit jako neoficiální turistický průvodce městem Holice. Web bude určen turistům, návštěvníkům města a lidem, kteří chtějí poznat jeho historii/památky/významné osobnosti/možnosti výletů do okolí/atd.
+
+Stránky
+Web bude tvořen celkem 7 HTML stránkami:
+1. Úvodní stránka - Představení města Holice, úvodní fotografie, stručné informace o městě a odkazy na nejzajímavější části webu.
+2. O Holicích - Základní informace o městě, jeho geografické poloze, historii, vývoji a zajímavostech.
+3. Zajímavosti - Přehled významných míst a památek, např. Afrického muzea Dr. Emila Holuba, kostela sv. Martina a historického centra města. Jednotlivá místa budou obsahovat vlastní popis a fotografie.
+4. Osobnosti - Představení významných osobností spojených s Holicemi, především cestovatele Emila Holuba.
+5. Výlety - Tipy na pěší a cyklistické výlety v Holicích a jejich okolí, například naučná stezka Od Holuba k Malichovi nebo naučná stezka Viselce. Stránka bude obsahovat popisy tras a praktické tipy pro návštěvníky.
+6. Galerie - Fotogalerie města, jeho památek, přírody a zajímavých míst. Fotografie budou rozděleny do přehledné galerie s popisky.
+7. Praktické informace - Informace o dopravě do města, parkování, turistickém informačním centru a užitečné odkazy pro návštěvníky.
+
+Grafické zpracování
+Web bude mít vzhled inspirovaný oficiálním grafickým manuálem města Holice. Hlavními barvami budou modrá (#164194) a žlutá (#FFDF43), doplněné bílou a světle šedou barvou. Modrá bude využita pro nadpisy, navigaci a důležité grafické prvky, žlutá jako zvýrazňující barva pro tlačítka, odkazy a dekorativní prvky. Pro hlavní nadpisy bude využito písmo Bree Serif (Juvenis dle manuálu nemůžu použít, jelikož je licencovaný a můj vybraný font je poměrně blízko), a pro běžný text písmo Calibri s vhodnými náhradními systémovými fonty. V horní části každé stránky bude umístěn název webu Poznej Holice a hlavní navigační menu.
+
+Technické řešení
+Web bude vytvořen pomocí validního HTML a CSS. CSS bude odděleno od HTML do externích souborů. Pro tisk vytvořím separátní css soubor. Obrázky budou optimalizovány a opatřeny alt texty. Součástí webu bude favicon.Web bude přístupný i při vypnutém JavaScriptu a CSS. Hotové stránky budou veřejně dostupné na školním serveru ESO podle pokynů předmětu.
