@@ -1,0 +1,16 @@
+main {
+    background-image: url(https://img.magnific.com/free-photo/wooden-floor-background_53876-88628.jpg?semt=ais_hybrid&w=740&q=80);
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+}
