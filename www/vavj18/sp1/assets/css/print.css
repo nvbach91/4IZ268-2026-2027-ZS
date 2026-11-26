@@ -1,0 +1,233 @@
+@page {
+    size: A4;
+    margin: 15mm;
+}
+
+body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+}
+
+h1, h2, h3 {
+    color: black;
+    break-after: avoid;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo,
+body > nav,
+nav.event-nav,
+.contact-form-section,
+.news-card summary {
+    display: none;
+}
+
+header {
+    background: white;
+    border-bottom: 2px solid black;
+}
+
+.header {
+    max-width: none;
+    padding: 0;
+}
+
+.title {
+    color: black;
+    font-size: 28pt;
+}
+
+main {
+    max-width: none;
+    padding: 10mm 1mm 0;
+}
+
+.home-wrapper,
+.contact-wrapper {
+    grid-template-columns: 1fr;
+}
+
+.match-ticker {
+    grid-column: auto;
+    grid-row: auto;
+}
+
+.news-wrapper,
+.about-wrapper {
+    max-width: none;
+}
+
+.featured-news,
+.match-ticker,
+.top-rankings,
+.event-card,
+.teams-card,
+.news-card,
+.about-section,
+.contact-info {
+    background: white;
+    border: 1px solid #999;
+    border-radius: 0;
+    padding: 12px;
+}
+
+.news-card {
+    border-left: 4px solid black;
+}
+
+.subtitle {
+    background: white;
+    color: black;
+    border: 1px solid #999;
+    border-radius: 0;
+    padding: 12px;
+}
+
+.subtitle h1 {
+    color: black;
+}
+
+.home-wrapper h2 {
+    border-bottom-color: black;
+}
+
+.top-rankings li,
+.event-team {
+    background: white;
+    border: 1px solid #999;
+    color: black;
+}
+
+.event-type.offline,
+.event-type.online {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.event-winner {
+    background: white;
+    color: black;
+    border-right-color: black;
+}
+
+.event-winner::before {
+    color: black;
+}
+
+.event-prizepool,
+.match-ticker strong,
+.team-members-title,
+.top-rankings li {
+    color: black;
+}
+
+.event-wrapper,
+.news-wrapper,
+.about-wrapper,
+.home-wrapper,
+.contact-wrapper {
+    display: block;
+}
+
+.event-card,
+.news-card,
+.about-section,
+.contact-info,
+.featured-news,
+.top-rankings,
+.match-ticker {
+    margin-bottom: 12px;
+}
+
+.event-card {
+    display: block;
+    overflow: hidden;
+}
+
+.event-image {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    padding: 4px;
+}
+
+.event-card .event-title {
+    font-size: 18pt;
+}
+
+.event-meta,
+.event-meta-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 16px;
+    text-align: left;
+}
+
+.event-meta {
+    margin-bottom: 8px;
+}
+
+.event-winner {
+    margin-top: 0;
+    padding: 2px 10px;
+    font-size: 14pt;
+}
+
+.event-winner::before {
+    display: inline;
+    margin-right: 6px;
+}
+
+.teams-wrapper {
+    display: block;
+    columns: 2;
+    column-gap: 12px;
+}
+
+.teams-card {
+    margin-bottom: 12px;
+}
+
+.teams-image {
+    width: 60px;
+    height: 60px;
+}
+
+.news-image,
+.news-full-content .news-image {
+    max-width: 50%;
+}
+
+.news-card details::details-content {
+    content-visibility: visible;
+    display: block;
+}
+
+.news-full-content {
+    display: block;
+}
+
+main a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+}
+
+.event-card,
+.teams-card,
+.news-card,
+.about-section,
+.contact-info,
+.featured-news,
+.top-rankings,
+.match-ticker {
+    break-inside: avoid;
+}

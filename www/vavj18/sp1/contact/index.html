@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the CS2TV team: questions, feedback and business inquiries.">
+    <meta name="author" content="CS2TV">
+    <title>CS2TV-Contact</title>
+    <link rel="icon" href="../assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/print.css" media="print">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="../">
+                <img class="logo"
+                    src="../assets/images/logo.jpg"
+                    alt="CS2TV-logo" height="100">
+                <p class="title">CS2TV</p>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="../">HOME</a>
+        <a href="../events/">EVENTS</a>
+        <a href="../teams/">TEAMS</a>
+        <a href="../news/">NEWS</a>
+        <a href="../about/">ABOUT</a>
+        <a href="../contact/" aria-current="page">CONTACT</a>
+    </nav>
+    <main>
+        <h1 class="contact-title">Contact Us</h1>
+        <div class="contact-wrapper">
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have a question, feedback, or a business inquiry? We would love to hear from you. Our headquarters is located right in the heart of Prague.</p>
+
+                <ul>
+                    <li><strong>Address:</strong> Václavské nám. 837/11, 110 00 Nové Město, Prague, Czech Republic</li>
+                    <li><strong>Email:</strong> <a href="mailto:contact@cs2tv.com">contact@cs2tv.com</a></li>
+                    <li><strong>Phone:</strong> +420 123 456 789</li>
+                </ul>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="business">Business &amp; Partnerships</option>
+                            <option value="support">Website Support</option>
+                            <option value="press">Press</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
