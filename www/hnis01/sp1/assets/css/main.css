@@ -1,0 +1,87 @@
+/*body{
+    background-color: rgb(0, 34, 109);
+}*/
+
+
+main {
+    /*background-color: gray;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+
+
+
+    /*background-image: url(https://tse3.mm.bing.net/th/id/OIP.9pZo9vd3Uw1l2ceSeBfuAQHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);*/
+    padding: 50px;
+    background-image: url(https://img.magnific.com/free-photo/grunge-wood-background-with-decorative-border_1048-14281.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnj-5s2JHFG5Tl7j2hFJ0SCJPADgiEynyAwfu0BUHG5xfzuoWbBocBgfM&s=10);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}*/
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.characterContainer {
+    padding: 15px 25px;
+    background-image: url(https://img.magnific.com/free-photo/wooden-floor-background_53876-88628.jpg?semt=ais_hybrid&w=740&q=80);
+}
+
+.infoItem {
+    display: flex;
+}
+
+.dottedLine {
+    flex-grow: 1;
+    border-bottom: 2px dotted #000;
+    margin: 0 8px;
+    height: 0.9em;
+}
+
+.label, .value {
+    flex-shrink: 0;
+}
+
+
+button:hover {
+    opacity: 80%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.details {
+
+    background-color: green;
+}
+
+.delete {
+
+    background-color: rgb(173, 5, 5);
+}
+
+
+.interactions {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1326px) {
+    main {
+        grid-template-columns: auto auto;
+        padding: 0 150px;
+    }
+
+
+}
