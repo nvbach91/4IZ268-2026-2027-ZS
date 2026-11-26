@@ -357,7 +357,7 @@ textarea {
         padding-left: 170px;
     }
 
-    * :not(.skills) {
+    .page, .topPage, .basicCombat, .scoreNumbers {
         justify-content: center;
     }
 
