@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=deviceWidth, initialScale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/details.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/1200/dungeons-and-dragons.jpg">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="headerItem" href="../frontpage/">Home</a>
+            <a class="headerItem" href="../rules/">Rules</a>
+            <a class="headerItem" href="../dice/">Dice</a>
+            <a class="headerItem" href="../books/">Books</a>
+            <a class="headerItem" href="../detail/" >New Character</a>
+        </nav>
+        <nav>
+            <a class="headerItem">Sign in</a>
+            <a class="headerItem">Login in</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="topPage">
+            <div class="mainTop">
+                <label for="charName">Character Name</label>
+                <input type="text" id="charName">
+            </div>
+
+            <div class="additionalTop">
+
+                <div class="topColumn">
+                    <div class="topItem">
+                        <label for="classLevel">Class &amp; Level</label>
+                        <input type="text" id="classLevel">
+                    </div>
+
+                    <div class="topItem">
+                        <label for="race">Race</label>
+                        <input type="text" id="race">
+                    </div>
+                </div>
+
+                <div class="topColumn">
+                    <div class="topItem">
+                        <label for="background">Background</label>
+                        <input type="text" id="background">
+                    </div>
+
+
+                    <div class="topItem">
+                        <label for="playerName">Player Name</label>
+                        <input type="text" id="playerName">
+                    </div>
+                </div>
+
+
+
+
+                <div class="topColumn">
+                    <div class="topItem">
+                        <label for="alignment">Alignment</label>
+                        <input type="text" id="alignment">
+                    </div>
+
+
+                    <div class="topItem">
+                        <label for="exp">Experience Points</label>
+                        <input type="text" id="exp">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="page">
+
+            <div class="scoreContainer">
+                <div class="scoreNumbers">
+                    <div>
+                        <div class="abilities">
+                            <div class="abilityBox">
+                                <label for="strScore">Strength</label>
+                                <input type="number" id="strScore" value="10">
+                                <input type="text" id="strMod" value="+0">
+                            </div>
+                            <div class="abilityBox">
+                                <label for="dexScore">Dexterity</label>
+                                <input type="number" id="dexScore" value="10">
+                                <input type="text" id="dexMod" value="+0">
+                            </div>
+                            <div class="abilityBox">
+                                <label for="conScore">Constitution</label>
+                                <input type="number" id="conScore" value="10">
+                                <input type="text" id="conMod" value="+0">
+                            </div>
+                            <div class="abilityBox">
+                                <label for="intScore">Intelligence</label>
+                                <input type="number" id="intScore" value="10">
+                                <input type="text" id="intMod" value="+0">
+                            </div>
+                            <div class="abilityBox">
+                                <label for="wisScore">Wisdom</label>
+                                <input type="number" id="wisScore" value="10">
+                                <input type="text" id="wisMod" value="+0">
+                            </div>
+                            <div class="abilityBox">
+                                <label for="chaScore">Charisma</label>
+                                <input type="number" id="chaScore" value="10">
+                                <input type="text" id="chaMod" value="+0">
+                            </div>
+                        </div>
+
+                        <div class="additionalProf">
+                            <div class="inline-field">
+                                <label for="inspiration">Inspiration</label>
+                                <input type="text" id="inspiration">
+                            </div>
+                            <div class="inline-field">
+                                <label for="prof-bonus">Proficiency Bonus</label>
+                                <input type="text" id="prof-bonus" value="+2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proficiencies">
+
+
+
+
+                        <div class="savingThrows">
+                            <h3>Saving Throws</h3>
+                            <div class="proficiencyRow">
+                                <label for="saveStr">Strength</label>
+                                <div>
+                                    <input type="checkbox" id="saveStr">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="saveDex">Dexterity</label>
+                                <div>
+                                    <input type="checkbox" id="saveDex">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="saveCon">Constitution</label>
+                                <div>
+                                    <input type="checkbox" id="saveCon">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="saveInt">Intelligence</label>
+                                <div>
+                                    <input type="checkbox" id="saveInt">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="saveWis">Wisdom</label>
+                                <div>
+                                    <input type="checkbox" id="saveWis">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="saveCha">Charisma</label>
+                                <div>
+                                    <input type="checkbox" id="saveCha">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="proficiencyContainer">
+                            <h2>Skills</h2>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyAcrobatics">Acrobatics <span class="subtext">(Dex)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyAcrobatics">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyAnimal">Animal Handling <span
+                                        class="subtext">(Wis)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyAnimal">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyArcana">Arcana <span class="subtext">(Int)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyArcana">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyAthletics">Athletics <span class="subtext">(Str)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyAthletics">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyDeception">Deception <span class="subtext">(Cha)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyDeception">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiency-history">History <span class="subtext">(Int)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiency-history">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyInsight">Insight <span class="subtext">(Wis)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyInsight">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyIntimidation">Intimidation <span
+                                        class="subtext">(Cha)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyIntimidation">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyInvestigation">Investigation <span
+                                        class="subtext">(Int)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyInvestigation">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyMedicine">Medicine <span class="subtext">(Wis)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyMedicine">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyNature">Nature <span class="subtext">(Int)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyNature">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiency-perception">Perception <span
+                                        class="subtext">(Wis)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiency-perception">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiency-performance">Performance <span
+                                        class="subtext">(Cha)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiency-performance">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiency-persuasion">Persuasion <span
+                                        class="subtext">(Cha)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiency-persuasion">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyReligion">Religion <span class="subtext">(Int)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyReligion">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencySleight">Sleight of Hand <span
+                                        class="subtext">(Dex)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencySleight">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencyStealth">Stealth <span class="subtext">(Dex)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencyStealth">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                            <div class="proficiencyRow">
+                                <label for="proficiencySurvival">Survival <span class="subtext">(Wis)</span></label>
+                                <div>
+                                    <input type="checkbox" id="proficiencySurvival">
+                                    <input type="text" value="+0">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="combatContainer">
+
+
+
+                <div class="basicCombat">
+                    <div class="basicCombatBox">
+                        <label for="ac">Armor Class</label>
+                        <input type="text" id="ac" value="10">
+                    </div>
+                    <div class="basicCombatBox">
+                        <label for="initiative">Initiative</label>
+                        <input type="text" id="initiative" value="+0">
+                    </div>
+                    <div class="basicCombatBox">
+                        <label for="speed">Speed</label>
+                        <input type="text" id="speed" value="30ft">
+                    </div>
+                </div>
+
+
+                <div class="basicHealth">
+
+                    <div>
+                        <label for="hpCurrent">Current Hit Points</label><span class="slash">/</span><label
+                            for="hpMax">Hit
+                            Point Maximum</label>
+                    </div>
+                    <div>
+                        <input type="text" id="hpCurrent"><span class="slash">/</span><input type="text" id="hpMax">
+                    </div>
+                    </br>
+                    <div class="tempHp">
+                        <label for="hpTemp">Temporary Hit Points</label>
+                        <input type="text" id="hpTemp">
+                    </div>
+
+                </div>
+
+
+                <div class="advanceHealth">
+
+                    <div class="hitDice">
+                        <h3>Hit dice</h3>
+                        <div>
+                            <label for="currentHitDice">Current</label> / <label for="totalHitDidce">Total</label>
+                        </div>
+                        <div>
+                            <input type="text" id="currentHitDice"> / <input type="text" id="totalHitDidce">
+                        </div>
+
+                    </div>
+
+
+                    <div class="deathSaves">
+                        <h3>Death Saves</h3>
+                        <div class="deathSuccess">
+                            <label>Successes</label><br>
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="deathFailure">
+                            <label>Failures</label><br>
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="attacks">
+
+                    <div class="attackRow">
+                        <label for="atkName-1">Name</label>
+                        <label for="atk-bonus-1">Atk Bonus</label>
+                        <label for="atkDamage-1">Damage/Type</label>
+                    </div>
+
+                    <div class="attackRow">
+                        <input type="text" id="atkName-1">
+                        <input type="text" id="atk-bonus-1">
+                        <input type="text" id="atkDamage-1">
+                    </div>
+
+
+                    <div class="attackRow">
+                        <input type="text" id="atkName-2">
+                        <input type="text" id="atk-bonus-2">
+                        <input type="text" id="atkDamage-2">
+                    </div>
+
+
+                    <div class="attackRow">
+                        <input type="text" id="atkName-3">
+                        <input type="text" id="atk-bonus-3">
+                        <input type="text" id="atkDamage-3">
+                    </div>
+
+                    <div class="otherAttacks">
+                        <label for="attacksDescription">Attacks &amp; Spellcasting</label>
+                        <textarea id="attacksDescription" rows="10"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="basicEquipment">
+                    <div class="currencyContainer">
+                        <div class="currency">
+                            <label for="currencyCp">CP</label>
+                            <input type="text" id="currencyCp">
+                        </div>
+                        </br>
+                        <div class="currency">
+                            <label for="currency-sp">SP</label>
+                            <input type="text" id="currency-sp">
+                        </div>
+                        </br>
+                        <div class="currency">
+                            <label for="currency-gp">GP</label>
+                            <input type="text" id="currency-gp">
+                        </div>
+                        </br>
+                        <div class="currency">
+                            <label for="currency-pp">PP</label>
+                            <input type="text" id="currency-pp">
+                        </div>
+                    </div>
+
+                    <div class="quickSlots">
+                        <label for="equipmentDescription">Equipment</label>
+                        <textarea id="equipmentDescription" rows="15"></textarea>
+                    </div>
+                </div>
+
+
+
+                <div class="skills">
+                    <div>
+                        <h3>Languages</h3>
+                        <div class="skillRow">
+                            <textarea id="Languages" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Armour</h3>
+                        <div class="skillRow">
+                            <textarea id="Armour" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Weapons</h3>
+                        <div class="skillRow">
+                            <textarea id="Weapons" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Tools</h3>
+                        <div class="skillRow">
+                            <textarea id="Tools" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="additional">
+                <div class="notesContainer">
+                    <label for="featuresTraits">NOTES</label>
+                    <textarea id="featuresTraits" rows="50"></textarea>
+                </div>
+
+                <div class="featuresContainer">
+                    <label for="featuresTraits">FEATURES &amp; TRAITS</label>
+                    <textarea id="featuresTraits" rows="50"></textarea>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="topPage">
+            <div class="mainTop">
+                <label for="spellcastingClass">SPELLCASTING CLASS</label>
+                <input type="text" id="spellcastingClass">
+            </div>
+
+            <div class="additionalTop">
+                <div class="topItem">
+                    <label for="spellcastingAbility">SPELLCASTING ABILITY</label>
+                    <input type="text" id="spellcastingAbility">
+                </div>
+                <div class="topItem">
+                    <label for="spellSaveDC">SPELL SAVE DC</label>
+                    <input type="text" id="spellSaveDC">
+                </div>
+                <div class="topItem">
+                    <label for="spellAttackBonus">SPELL ATTACK BONUS</label>
+                    <input type="text" id="spellAttackBonus">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="page">
+
+
+            <!-- Column 1: Cantrips, Level 1, Level 2 -->
+            <div class="spellsCol-1">
+                <!-- Cantrips -->
+                <div class="spellSection">
+                    <div class="spellHeader">
+                        <div class="spellLevel">0</div>
+                        <div class="spellHeaderBanner">CANTRIPS</div>
+                    </div>
+                    <div class="spellRows">
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                    </div>
+                </div>
+
+                <!-- Level 1 -->
+                <div class="spellSection">
+                    <div class="spellHeader">
+                        <div class="spellLevel">1</div>
+                        <div>
+                            <div>
+                                <label for="slotsTotal-1">Slots Total</label><span class="slash">/</span><label
+                                    for="slotsExpended-1">Slots Expended</label>
+                            </div>
+                            <div>
+                                <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                    id="slotsExpended-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spellSubHeader">
+                        <span>PREP</span> <span class="slash">|</span>
+                        <span class="colName">SPELL NAME</span>
+                    </div>
+                    <div class="spellRows">
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                    </div>
+                </div>
+
+                <div class="spellSection">
+                    <div class="spellHeader">
+                        <div class="spellLevel">2</div>
+                        <div>
+                            <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                id="slotsExpended-1">
+                        </div>
+
+                    </div>
+                    <div class="spellRows">
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Level 3, Level 4, Level 5 -->
+            <div class="spellsCol">
+                <div class="spellSection">
+                    <div class="spellHeader">
+                        <div class="spellLevel">3</div>
+                        <div>
+                            <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                id="slotsExpended-1">
+                        </div>
+
+                    </div>
+                    <div class="spellRows">
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                    </div>
+                </div>
+
+                <div class="spellSection">
+                    <div class="spellHeader">
+                        <div class="spellLevel">4</div>
+                        <div>
+                            <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                id="slotsExpended-1">
+                        </div>
+
+                    </div>
+                    <div class="spellRows">
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                    </div>
+                </div>
+
+                <div class="spellSection">
+                    <div class="spellHeader">
+                        <div class="spellLevel">5</div>
+                        <div>
+                            <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                id="slotsExpended-1">
+                        </div>
+
+                    </div>
+                    <div class="spellRows">
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3: Level 6, Level 7, Level 8, Level 9 -->
+            <div class="spellsCol">
+                <div class="spellSection">
+                    <div class="spellHeader">
+                        <div class="spellLevel">6</div>
+                        <div>
+                            <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                id="slotsExpended-1">
+                        </div>
+
+                    </div>
+                    <div class="spellRows">
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                    </div>
+                </div>
+
+                <!-- Level 7 -->
+                <div class="spellSection">
+                    <div class="spellSection">
+                        <div class="spellHeader">
+                            <div class="spellLevel">7</div>
+                            <div>
+                                <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                    id="slotsExpended-1">
+                            </div>
+
+                        </div>
+                        <div class="spellRows">
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        </div>
+                    </div>
+
+                    <!-- Level 8 -->
+                    <div class="spellSection">
+                        <div class="spellHeader">
+                            <div class="spellLevel">8</div>
+                            <div>
+                                <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                    id="slotsExpended-1">
+                            </div>
+
+                        </div>
+                        <div class="spellRows">
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        </div>
+                    </div>
+
+                    <div class="spellSection">
+                        <div class="spellHeader">
+                            <div class="spellLevel">9</div>
+                            <div>
+                                <input type="text" id="slotsTotal-1"><span class="slash">/</span><input type="text"
+                                    id="slotsExpended-1">
+                            </div>
+
+                        </div>
+                        <div class="spellRows">
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                            <div class="spellRow"><input type="checkbox"><input type="text"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="footerItem">
+            <h4>Support</h4>
+            <a>Support forum</a>
+            <a>Cookies</a>
+            <a>Privacy</a>
+
+        </div>
+        <div class="footerItem">
+            <h4> About</h4>
+            <a>Contact</a>
+            <a>Credits</a>
+
+        </div>
+        <div class="footerItem">
+            <h4> Socials</h4>
+            <a>Discord</a>
+            <a>Reddit</a>
+            <a>Youtube</a>
+        </div>
+    </footer>
+</body>
+
+</html>
