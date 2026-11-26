@@ -1,0 +1,368 @@
+.page {
+    display: flex;
+    background-image: url(https://img.magnific.com/free-photo/wooden-floor-background_53876-88628.jpg?semt=ais_hybrid&w=740&q=80);
+    margin-bottom: 60px;
+    padding: 50px;
+    gap: 80px;
+}
+
+
+.page>*,
+.scoreContainer,
+.attackRow>* {
+    flex: 1;
+}
+
+
+
+.topPage {
+    display: flex;
+    padding: 40px 20px;
+    gap: 75px;
+    background-image: url(https://images.template.net/wp-content/uploads/2017/01/Parchment-Paper-Texture1.jpg);
+    border-radius: 20px 20px 0 0;
+    border-bottom: 5px solid rgba(53, 52, 52, 0.932);
+}
+
+.mainTop {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    gap: 50px;
+}
+
+.mainTop input {
+    font-size: xx-large;
+}
+
+
+.additionalTop {
+    flex: 1;
+    display: flex;
+    gap: 40px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.topColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.topItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.scoreNumbers,
+.currency {
+    display: flex;
+}
+
+
+.scoreNumbers input {
+    text-align: center;
+    max-width: 50px;
+
+}
+
+
+.abilityBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 5px
+}
+
+.abilities {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-weight: bolder;
+    gap: 30px;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 0 50px 0;
+}
+
+
+.abilities input,
+.additionalProf input {
+    font-size: x-large;
+    max-width: 80px;
+}
+
+
+
+
+
+textarea {
+    resize: vertical;
+}
+
+.proficiencies {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 30px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.proficiencyRow,
+.otherAttacks,
+.tempHp,
+.notesContainer,
+.featuresContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.savingThrows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 30px 30px 30px;
+}
+
+
+.proficiencyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 30px 30px 50px 30px;
+}
+
+.additionalProf {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-weight: bolder;
+    gap: 30px;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px 30px 50px 30px;
+}
+
+
+
+.basicCombat {
+    display: flex;
+    gap: 30px;
+    font-size: x-large;
+}
+
+/*repeat with skills*/
+.basicCombat input {
+    text-align: center;
+    font-size: x-large;
+    max-width: 80px;
+    max-height: 30px;
+}
+
+.basicCombatBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15px 30px 30px 30px;
+}
+
+.basicCombatBox label {
+    margin-bottom: 10px;
+}
+
+.basicHealth {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15px 30px 30px 30px;
+}
+
+
+
+
+
+.basicHealth input,
+.basicCombat input {
+    flex: 1;
+    font-size: .9rem;
+    padding: 8px;
+}
+
+.basicHealth label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.slash {
+    font-size: 2rem;
+    margin: 0 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tempHp>input {
+    max-width: 50%;
+}
+
+.advanceHealth {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 200px;
+    font-size: x-large;
+    justify-content: center;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 35px 30px 30px;
+}
+
+.deathSaves input[type="checkbox"] {
+    transform: scale(2);
+    margin: 4px;
+}
+
+.hitDice input {
+    max-width: 80px;
+}
+
+
+.attacks {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.attackRow {
+    display: flex;
+    gap: 5px;
+}
+
+
+.quickSlots {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.basicEquipment {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.basicEquipment textarea {
+    width: 100%;
+}
+
+.currencyContainer {
+    padding: 20px 0;
+    flex: 1;
+}
+
+.currency>label {
+    width: 30px;
+}
+
+.additional {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.spellLevel {
+    font-weight: bold;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    max-width: 50px;
+    text-align: center;
+}
+
+.spellHeader input {
+    font-size: .9rem;
+    padding: 8px;
+    max-width: 100px;
+}
+
+
+
+/*.spellRows {
+    margin-right: 170px;
+}*/
+
+.spellRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.spellRows input[type="text"] {
+    flex: 1;
+    width: auto;
+    text-align: left;
+}
+
+
+
+
+@media screen and (max-width: 1326px) {
+
+
+    .page {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .topPage {
+        flex-direction: column;
+    }
+
+    .basicHealth {
+        padding-left: 170px;
+    }
+
+    * :not(.skills) {
+        justify-content: center;
+    }
+
+    .skillRow textarea {
+        width: 70%;
+    }
+
+}
