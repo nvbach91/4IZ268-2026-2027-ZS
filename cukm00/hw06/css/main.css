@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 20px;
+    background-color:white;
+    color: #000000;
+}
+
+.cipher-box {
+    max-width: 480px;
+    margin: 0 auto 15px auto;
+    padding: 35px 20px 20px 20px;
+    background-color: #e8e8e8;
+}
+
+.cipher-box h1 {
+    margin: 0 0 18px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cipher-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cipher-box textarea,
+.cipher-box input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    outline: none;
+}
+
+.cipher-box textarea {
+    resize: vertical;
+}
+
+.cipher-box button {
+    align-self: flex-start;
+    padding: 15px 22px;
+    border: none;
+    background-color: rgba(37, 165, 165, 0.577);
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cipher-box button:hover {
+    background-color: #4f8688;
+}
+
+.output {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 28px 15px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    min-height: 85px;
+    word-wrap: break-word;
+}
