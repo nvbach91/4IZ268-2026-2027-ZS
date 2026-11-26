@@ -1,0 +1,148 @@
+main {
+    display: flex;
+    gap: 50px;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/031/159/601/small/white-canvas-background-texture-free-photo.jpg);
+    background-size: 100% 100%;
+    padding: 20px;
+}
+
+
+
+
+.diceContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0;
+    align-items: center;
+    background-image: url(../img/secondBackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: gray;
+}
+
+
+.dice {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+}
+
+.dice img {
+    height: auto;
+    width: 100px;
+}
+
+.dice input {
+    max-width: 80px;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+
+
+
+.else {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.else button, .else input, .else select {
+    background-color: gray;
+    color: white;
+}
+
+
+input::placeholder {
+    color: #000000; 
+}
+
+input::-webkit-input-placeholder {
+    color: #000000;
+}
+input:-ms-input-placeholder {
+    color: #000000;
+}
+
+
+#outcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 80px;
+    max-width: 250px;
+    max-height: 200px;
+    margin: 120px;
+    background-image: url(../img/secondBackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: gray;
+}
+
+
+#roll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    font-size: x-large;
+    align-self: center;
+    text-align: center;
+    padding: 25px 200px;
+    margin: 20px;
+}
+
+.modifiers {
+    display: flex;
+    flex-direction: column;
+}
+
+.modifiers input {
+    align-self: center;
+    text-align: center;
+    max-width: 250px;
+    font-size: x-large;
+}
+
+.rerolls {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+.rerolls>*, .preset {
+    flex: 1;
+}
+
+
+.presetContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.preset input,
+.preset select {
+    font-size: medium;
+    height: 100%;
+    padding: 15px;
+}
+
+.presetContainer label {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.presetContainer button {
+    padding: 20px;
+}
