@@ -32,7 +32,7 @@ fetchUsersButton.addEventListener('click', async () => {
             const userUpdateButton = document.createElement('button');
             userUpdateButton.textContent = 'Update';
             userUpdateButton.addEventListener('click', () => {
-                openUserForm(user.id);
+                openUserForm(user);
             });
 
             userElement.textContent = `${user.firstName} ${user.lastName} - ${user.email}`;
