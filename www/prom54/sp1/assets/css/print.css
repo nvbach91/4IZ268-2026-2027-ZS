@@ -1,0 +1,82 @@
+/* Skryt� prvk�, kter� p�i tisku nejsou pot�eba */
+nav,
+footer,
+.gallery-list,
+.card .btn-more,
+.comparison-photo,
+.print-hidden,
+.card img {
+  display: none;
+}
+
+/* Převod do černobílého úsporného režimu */
+body,
+main,
+header,
+section,
+article,
+div {
+  background-color: #ffffff;
+  background-image: none;
+  color: #000000;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Identifikace webu v hlavičce při tisku */
+header {
+  border-bottom: 2px solid #000000;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Zrušení tmavých karet a rámečků */
+section,
+article {
+  border: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Úprava tabulek pro čistý tisk */
+table {
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 6px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Odkazy v textu bez barev */
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* Nastavení černé barvy pro všechny nadpisy, zvýraznění a buňky tabulky */
+header h1,
+h2,
+h3,
+strong,
+.print-table th,
+td,
+.card h2,
+li::marker,
+p,
+li {
+  color: #000000;
+}
