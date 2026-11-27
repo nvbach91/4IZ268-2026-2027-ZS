@@ -4,7 +4,6 @@ const form = document.querySelector('#user-form');
 
 const openUserForm = (user) => {
     // open form with pre-filled inputs
-    form.setAttribute('style', 'display: block');
     form.querySelector('input[name="firstName"]').value = user.firstName;
     form.querySelector('input[name="lastName"]').value = user.lastName;
     form.querySelector('input[name="email"]').value = user.email;
