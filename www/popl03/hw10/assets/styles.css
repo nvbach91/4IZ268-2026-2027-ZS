@@ -1,0 +1,118 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    background-color: hsla(201, 70%, 90%);
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: hsl(201, 71%, 45%);
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 0;
+
+    input {
+        background-color: #9e93e2;
+        outline: none;
+        border: none;
+        padding: 6px;
+        min-width: 50%;
+    }
+
+    button {
+        background-color: hsla(201, 70%, 90%);
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 4px 12px;
+        min-width: 40%;
+        transition: all 200ms ease;
+
+        &:hover {
+            cursor: pointer;
+            background-color: hsla(201, 70%, 85%);
+        }
+    }
+}
+
+#user-profile {
+    width: 100%;
+
+    .profile-card {
+        width: 100%;
+
+        h2 {
+            width: 100%;
+            background-color: hsla(201, 70%, 65%);
+            padding: 5px 6px;
+            border-radius: 5px;
+        }
+
+        >div {
+            display: flex;
+            gap: 24px;
+
+            img {
+                height: 240px;
+                width: auto;
+            }
+
+            .info {
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+#repos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+
+
+    h2 {
+        margin: 0;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+
+        p {
+            padding: 6px 12px;
+            margin: 0;
+            border-radius: 3px;
+            width: 100%;
+            box-sizing: border-box;
+
+            background-color: hsla(201, 70%, 80%);
+        }
+
+        p:nth-child(odd) {
+            background-color: hsla(201, 70%, 75%);
+        }
+    }
+}
