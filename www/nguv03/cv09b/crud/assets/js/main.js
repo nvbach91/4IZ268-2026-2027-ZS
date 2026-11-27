@@ -1,12 +1,9 @@
 const fetchUsersButton = document.querySelector('#fetch-users');
 const usersList = document.querySelector('#users-list');
-const App = {};
+const form = document.querySelector('#user-form');
 
-const openUserForm = (id) => {
-    // find user object in App.users
-    const user = App.users.find((user) => id === user.id);
+const openUserForm = (user) => {
     // open form with pre-filled inputs
-    const form = document.querySelector('#user-form');
     form.setAttribute('style', 'display: block');
     form.querySelector('input[name="firstName"]').value = user.firstName;
     form.querySelector('input[name="lastName"]').value = user.lastName;
@@ -16,9 +13,8 @@ const openUserForm = (id) => {
 fetchUsersButton.addEventListener('click', async () => {
     try {
         const response = await axios.get('https://dummyjson.com/users');
-        App.users = response.data.users;
         const userElements = [];
-        for (const user of App.users) {
+        for (const user of response.data.users) {
             const userElement = document.createElement('li');
             const userDeleteButton = document.createElement('button');
             userDeleteButton.textContent = 'Delete';
