@@ -68,4 +68,4 @@ Funkčnost aplikace otestujte s použitím několika z následujících GitHub u
 ### Demo
 ![image](https://user-images.githubusercontent.com/20724910/49305585-f031c000-f4cf-11e8-962c-77b231916b7e.png)
 
-[Demo aplikace](https://fcp.vse.cz/4IZ268/2018-2019-ZS/www/nguv03/homework-08/solution/) jen pro vyzkoušení, ne copypaste.
+[Demo aplikace](https://fcp.vse.cz/4IZ268/github-explorer/) jen pro vyzkoušení, ne copypaste.
