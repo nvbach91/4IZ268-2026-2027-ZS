@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+hr {
+  border-style: solid;
+  border-color: #eee;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 5px solid cadetblue;
+  border-top: 5px solid #ccc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+footer {
+  background-color: cadetblue;
+  padding: 20px 0;
+  color: white;
+}
+
+header {
+  color: white;
+  background-color: cadetblue;
+  padding: 15px;
+}
+header h1 {
+  margin-top: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+input, button {
+  padding: 10px;
+  font: inherit;
+}
+
+input {
+  max-width: 100%;
+}
+
+button {
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#app {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#search-form {
+  margin-bottom: 20px;
+}
+
+#user-profile {
+  overflow-wrap: anywhere;
+}
+#user-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+#user-profile p {
+  margin: 6px 0;
+}
+
+#repositories {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+#repositories li {
+  padding: 12px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+}
+#repositories a, #user-profile a {
+  color: #24666a;
+}
+#repositories p {
+  margin: 5px 0;
+}
+
+.error {
+  color: #b00020;
+}
+@media screen and (max-width: 480px) {
+  #search-form input, #search-form button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
