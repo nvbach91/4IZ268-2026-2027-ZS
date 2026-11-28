@@ -9,8 +9,9 @@
   </head>
   <body>
       <h1 id="heading">FB app</h1>
-      <fb:login-button id="fb-login" scope="public_profile,email" onlogin="App.checkLoginState();"></fb:login-button>
-      <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+      <fb:login-button id="fb-login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+      <button id="load-data">Load data</button>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="main.js"></script>
   </body>
 </html>
