@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    color: #24292f;
+    background: #f6f8fa;
+    font: 16px/1.5 system-ui, sans-serif;
+}
+
+.container {
+    width: min(100%, 48rem);
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 0.25rem;
+    font-size: 1.8rem;
+}
+
+.page-header p,
+.profile-bio,
+.repo-description {
+    color: #57606a;
+}
+
+#user-input {
+    margin-bottom: 0.75rem;
+}
+
+#user-input label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+}
+
+.search-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+input,
+button {
+    min-height: 2.75rem;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #8c959f;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    background: #fff;
+}
+
+button {
+    border-color: #1f6feb;
+    color: #fff;
+    background: #1f6feb;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1158c7;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+    outline: 3px solid #0969da;
+    outline-offset: 2px;
+}
+
+button:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+#status {
+    min-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile-card,
+.repos {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.profile-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.profile-card h2,
+.repos h2 {
+    margin-bottom: 0.5rem;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.25rem 0.75rem;
+    margin: 0;
+}
+
+.profile-info dt {
+    font-weight: 600;
+}
+
+.profile-info dd {
+    min-width: 0;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.repo-list {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0;
+    list-style: none;
+}
+
+.repo {
+    padding-top: 0.75rem;
+    border-top: 1px solid #d8dee4;
+}
+
+.repo a {
+    font-weight: 600;
+}
+
+.repo-description {
+    margin: 0.2rem 0 0;
+}
+
+@media (max-width: 30rem) {
+    .search-controls {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .profile-card {
+        flex-direction: column;
+    }
+}

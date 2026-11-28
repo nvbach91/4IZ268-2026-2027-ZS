@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Look up a GitHub profile and explore its repositories.">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <main id="app" class="container">
+        <header class="page-header">
+            <h1>GitHub Profile Finder</h1>
+            <p>Enter a GitHub username to see profile details and public repositories.</p>
+        </header>
+        <form id="user-input">
+            <label for="userName">GitHub username</label>
+            <div class="search-controls">
+                <input type="text" id="userName" name="userName" placeholder="For example, octocat" spellcheck="false" autocomplete="off" required>
+                <button type="submit" id="input-button">Find profile</button>
+            </div>
+        </form>
+        <p id="status" role="status" aria-live="polite"></p>
+        <section id="user-profile" aria-label="GitHub profile results"></section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
